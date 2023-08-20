@@ -1,14 +1,5 @@
 [
   {
-    "UpdateStageName": "Bot Download",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "FetchURL",
-    "UpdateSourceData": "https://x3collective.com/misc/bot/main.zip",
-    "UnzipUpdateSource": true,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": true
-  },
-  {
     "UpdateStageName": "Create Virtual Environment",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
