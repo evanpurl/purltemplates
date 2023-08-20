@@ -3,8 +3,10 @@
     "UpdateStageName": "Bot Download",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
-    "UpdateSourceData": "/bin/bash",
-    "UpdateSourceArgs": "-c \"git clone https://github.com/evanpurl/NLNBot\""
+    "UpdateSourceData": "https://www.x3collective.com/misc/bot/main.zip",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true
   },
   {
     "UpdateStageName": "Create Virtual Environment",
