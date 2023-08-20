@@ -1,5 +1,12 @@
 [
   {
+    "UpdateStageName": "Download Bot",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"git clone https://github.com/evanpurl/NLNBot\""
+  },
+  {
     "UpdateStageName": "Create Virtual Environment",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
@@ -11,6 +18,6 @@
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
     "UpdateSourceData": "/bin/bash",
-    "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}venv/bin/activate' && python3 -m pip install --upgrade pip && git clone https://github.com/Rapptz/discord.py && cd discord.py && python3 -m pip install discord.py && python3 -m pip install python-dotenv && python3 -m pip install chat_exporter\""
+    "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}venv/bin/activate' && python3 -m pip install --upgrade pip && python3 -m pip -r requirements.txt\""
   }
 ]
