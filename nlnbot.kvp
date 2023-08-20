@@ -1,4 +1,4 @@
-Meta.DisplayName=Nite Life Network Bot
+ Meta.DisplayName=Nite Life Network Bot
 Meta.Description=NLN Bot Created by Purls
 Meta.OS=Linux
 Meta.Arch=x86_64
@@ -21,7 +21,7 @@ App.RootDir=./nlnbot/
 App.BaseDirectory=./nlnbot/
 App.ExecutableWin=$PATH/python3
 App.ExecutableLinux=venv/bin/python3
-App.WorkingDir=NLNBot-master
+App.WorkingDir=NLNBot
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs=main.py
