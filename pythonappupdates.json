@@ -5,7 +5,7 @@
     "UpdateSource":"GitRepo",
     "UpdateSourceData":"{{DownloadSource}}",
     "UpdateSourceTarget":"{{$FullBaseDir}}",
-    "UpdateSourceConditionSetting":"DownloadType",
+    "UpdateSourceConditionSetting":"{{DownloadType}}",
     "UpdateSourceConditionValue":"GitRepo"
   },
   {
@@ -15,11 +15,11 @@
     "UpdateSourceArgs":"{{DownloadSource}}",
     "UpdateSourceData":"{{DownloadFilename}}",
     "UpdateSourceVersion":"{{DownloadVersion}}",
-    "UpdateSourceTarget":"{{$FullBaseDir}}app",
+    "UpdateSourceTarget":"{{$FullBaseDir}}",
     "UnzipUpdateSource":true,
     "OverwriteExistingFiles":true,
     "DeleteAfterExtract":true,
-    "UpdateSourceConditionSetting":"DownloadType",
+    "UpdateSourceConditionSetting":"{{DownloadType}}",
     "UpdateSourceConditionValue":"GithubRelease"
   },
   {
@@ -27,11 +27,11 @@
     "UpdateSourcePlatform":"All",
     "UpdateSource":"FetchURL",
     "UpdateSourceData":"{{DownloadSource}}",
-    "UpdateSourceTarget":"{{$FullBaseDir}}app",
+    "UpdateSourceTarget":"{{$FullBaseDir}}",
     "UnzipUpdateSource":true,
     "OverwriteExistingFiles":true,
     "DeleteAfterExtract":true,
-    "UpdateSourceConditionSetting":"DownloadType",
+    "UpdateSourceConditionSetting":"{{DownloadType}}",
     "UpdateSourceConditionValue":"DownloadURL"
   },
   {
