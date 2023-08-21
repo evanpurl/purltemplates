@@ -1,10 +1,10 @@
 [
   {
-    "UpdateStageName": "Bot Download",
+    "UpdateStageName": "Bot Update",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
     "UpdateSourceData": "/bin/bash",
-    "UpdateSourceArgs": "-c \"git clone https://github.com/evanpurl/Cloe.git\""
+    "UpdateSourceArgs": "-c \"git clone https://github.com/evanpurl/Cloe.git '{{$FullRootDir}}'\""
   },
   {
     "UpdateStageName": "Create Virtual Environment",
