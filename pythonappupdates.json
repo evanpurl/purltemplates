@@ -4,35 +4,7 @@
     "UpdateSourcePlatform":"All",
     "UpdateSource":"GitRepo",
     "UpdateSourceData":"{{DownloadSource}}",
-    "UpdateSourceTarget":"{{$FullBaseDir}}",
-    "UpdateSourceConditionSetting":"{{DownloadType}}",
-    "UpdateSourceConditionValue":"GitRepo"
-  },
-  {
-    "UpdateStageName":"Application Download",
-    "UpdateSourcePlatform":"All",
-    "UpdateSource":"GithubRelease",
-    "UpdateSourceArgs":"{{DownloadSource}}",
-    "UpdateSourceData":"{{DownloadFilename}}",
-    "UpdateSourceVersion":"{{DownloadVersion}}",
-    "UpdateSourceTarget":"{{$FullBaseDir}}",
-    "UnzipUpdateSource":true,
-    "OverwriteExistingFiles":true,
-    "DeleteAfterExtract":true,
-    "UpdateSourceConditionSetting":"{{DownloadType}}",
-    "UpdateSourceConditionValue":"GithubRelease"
-  },
-  {
-    "UpdateStageName":"Application Download",
-    "UpdateSourcePlatform":"All",
-    "UpdateSource":"FetchURL",
-    "UpdateSourceData":"{{DownloadSource}}",
-    "UpdateSourceTarget":"{{$FullBaseDir}}",
-    "UnzipUpdateSource":true,
-    "OverwriteExistingFiles":true,
-    "DeleteAfterExtract":true,
-    "UpdateSourceConditionSetting":"{{DownloadType}}",
-    "UpdateSourceConditionValue":"DownloadURL"
+    "UpdateSourceTarget":"{{$FullBaseDir}}"
   },
   {
     "UpdateStageName": "Create Virtual Environment",

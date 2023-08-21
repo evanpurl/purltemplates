@@ -1,76 +1,30 @@
 [
-    {
-        "DisplayName":"Application Download Type",
-        "Category":"Python - Settings",
-        "Description":"Sets where to download the application from. Be sure to enter the \"Application Download Source\", \"GitHub Release Filename\", and \"GitHub Release Version\" where applicable. Update the application after setting this value.",
-        "Keywords":"download,type",
-        "FieldName":"DownloadType",
-        "InputType":"enum",
-        "IsFlagArgument":false,
-        "ParamFieldName":"DownloadType",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"GitRepo",
-        "EnumValues":{
-            "DownloadURL":"Download URL",
-            "GithubRelease":"GitHub Release",
-            "GitRepo":"GitHub Repo",
-            "None":"None"
-        }
-    },
-    {
-    "DisplayName":"Application Download Source",
+{
+"DisplayName":"Application Download Source",
+"Category":"Python - Settings",
+"Description":"Sets the source for the \"Application Download Type\". Enter the values based on the type you chose in the previous input. GitHub Repo = URL that ends in .git. GitHub Release = User/Repo. Download URL = URL to a zip file to download. Update the application after setting this value.",
+"Keywords":"download,source",
+"FieldName":"DownloadSource",
+"InputType":"text",
+"IsFlagArgument":false,
+"ParamFieldName":"DownloadSource",
+"IncludeInCommandLine":false,
+"DefaultValue":"",
+"Placeholder":"https://github.com/IceOfWraith/IceBot.git",
+"EnumValues":{}
+},
+{
+    "DisplayName":"Main Filename",
     "Category":"Python - Settings",
-    "Description":"Sets the source for the \"Application Download Type\". Enter the values based on the type you chose in the previous input. GitHub Repo = URL that ends in .git. GitHub Release = User/Repo. Download URL = URL to a zip file to download. Update the application after setting this value.",
-    "Keywords":"download,source",
-    "FieldName":"DownloadSource",
+    "Description":"Sets the file to run.",
+    "Keywords":"file",
+    "FieldName":"RunFile",
     "InputType":"text",
     "IsFlagArgument":false,
-    "ParamFieldName":"DownloadSource",
+    "ParamFieldName":"RunFile",
     "IncludeInCommandLine":false,
     "DefaultValue":"",
-    "Placeholder":"https://github.com/IceOfWraith/IceBot.git",
+    "Placeholder":"main.py",
     "EnumValues":{}
-    },
-    {
-        "DisplayName":"GitHub Release Filename",
-        "Category":"Python - Settings",
-        "Description":"If you chose \"GitHub Release\" for the \"Application Download Type\", you need to enter the file from the release to download.",
-        "Keywords":"github,release,filename",
-        "FieldName":"DownloadFilename",
-        "InputType":"text",
-        "IsFlagArgument":false,
-        "ParamFieldName":"DownloadFilename",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"",
-        "Placeholder":"discordbot.zip",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"GitHub Release Version",
-        "Category":"Python - Settings",
-        "Description":"If you chose \"GitHub Release\" for the \"Application Download Type\", you may enter the release version to download. Leave this blank to download the latest.",
-        "Keywords":"github,release,version",
-        "FieldName":"DownloadVersion",
-        "InputType":"text",
-        "IsFlagArgument":false,
-        "ParamFieldName":"DownloadVersion",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"",
-        "Placeholder":"1.0.0",
-        "EnumValues":{}
-    },
-    {
-        "DisplayName":"Main Filename",
-        "Category":"Python - Settings",
-        "Description":"Sets the file to run.",
-        "Keywords":"file",
-        "FieldName":"RunFile",
-        "InputType":"text",
-        "IsFlagArgument":false,
-        "ParamFieldName":"RunFile",
-        "IncludeInCommandLine":false,
-        "DefaultValue":"",
-        "Placeholder":"main.py",
-        "EnumValues":{}
 }
 ]
