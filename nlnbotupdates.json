@@ -1,5 +1,12 @@
 [
   {
+    "UpdateStageName": "Bot Update",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"git clone https://github.com/evanpurl/NLNBot.git '{{$FullRootDir}}'\""
+  },
+  {
     "UpdateStageName": "Create Virtual Environment",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
