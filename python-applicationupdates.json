@@ -11,6 +11,6 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}serverfiles/venv/bin/activate' && python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt"
+        "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}serverfiles/venv/bin/activate' && python3 -m pip install --upgrade pip"
     }
 ]
