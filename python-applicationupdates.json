@@ -7,7 +7,7 @@
     "UpdateSourceArgs": "-c \"rm -rf '{{$FullRootDir}}venv' && /usr/bin/python3 -m venv '{{$FullRootDir}}venv'\""
   },
   {
-    "UpdateStageName": "Pip & Discord.py Script",
+    "UpdateStageName": "Install Requirements",
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "Executable",
     "UpdateSourceData": "/bin/bash",
