@@ -15,7 +15,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}serverfiles/venv/bin/activate' && python3 -m pip install --upgrade pip && python3 -m pip install -r {{$FullRootDir}}serverfiles/requirements.txt ",
+        "UpdateSourceArgs": "-c \"source '{{$FullRootDir}}serverfiles/venv/bin/activate' && python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
