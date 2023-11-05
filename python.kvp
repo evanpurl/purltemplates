@@ -1,6 +1,6 @@
 Meta.DisplayName=Python
 Meta.Description=Created by Purls
-Meta.OS=Linux
+Meta.OS=Windows
 Meta.Arch=x86_64
 Meta.Author=Purls
 Meta.URL=
@@ -55,7 +55,7 @@ App.RCONHeartbeatMinutes=0
 App.RCONHeartbeatCommand=ping
 App.TelnetLoginFormat={0}
 App.UpdateSources=@IncludeJson[pythonupdates.json]
-App.PreStartStages=[{"UpdateStageName":"Create Virtual Environment","UpdateSourcePlatform":"Linux","UpdateSource":"Executable","UpdateSourceData":"/bin/bash","UpdateSourceArgs":"-c \"source '{{$FullRootDir}}venv/bin/activate'\""}]
+App.PreStartStages=[{"UpdateStageName":"Create Virtual Environment","UpdateSourcePlatform":"Linux","UpdateSource":"Executable","UpdateSourceData":"/bin/bash","UpdateSourceArgs":"-c \"source '{{$PATH}}venv/bin/activate'\""}]
 App.Compatibility=None
 App.SteamUpdateAnonymousLogin=True
 App.SteamForceLoginPrompt=False
